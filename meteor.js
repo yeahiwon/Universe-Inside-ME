@@ -3,7 +3,7 @@ class Meteor {
     this.pos = createVector(x, y);
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
-    this.length = 15;
+    this.length = 10;
     this.r = 0;
     this.c = color(74, 168,random(150,225));
     this.mass = 10;
@@ -17,6 +17,7 @@ class Meteor {
   }
 
   update() {
-
-  }
+    this.length+=random(-5,-2);
+    this.length-=random(-5,-2);
+ }
 }
