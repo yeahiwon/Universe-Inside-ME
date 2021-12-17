@@ -5,7 +5,7 @@ class Meteor {
     this.acc = createVector(0, 0);
     this.length = 15;
     this.r = 0;
-    this.c = color(74, 168,random(0,216));
+    this.c = color(74, 168,random(150,225));
     this.mass = 10;
     this.opacity = 200;
     }
