@@ -14,9 +14,16 @@ let destabilise = 0.15;
 /////////////////
 let t = 100;
 
-function setup() {
-  createCanvas(300, 700);
+let myUniverse;
 
+function preload() {
+  myUniverse = loadSound('firststep.mp3');
+}
+
+function setup() {
+
+  createCanvas(300, 700);
+  myUniverse.play();
   for(let i = 0; i < 10; i++) {
   meteor[i] = new Meteor(random(0, 300),random(0, 700));
 }
