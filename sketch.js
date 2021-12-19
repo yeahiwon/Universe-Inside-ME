@@ -12,7 +12,7 @@ let numPlanets = 4;
 let G = 120;
 let destabilise = 0.15;
 /////////////////
-let t = 50;
+let t = 100;
 
 function setup() {
   createCanvas(300, 700);
@@ -68,8 +68,10 @@ function draw() {
 
 function overCircle(x,y,r){
   if (dist(x,y,mouseX,mouseY)<r){
+   t = 200;
     return true;
   } else {
+    t = 50;
     return false;
   }
 }
