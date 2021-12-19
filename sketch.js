@@ -85,7 +85,7 @@ function Body(_mass, _pos, _vel){
     for (let i = 0; i < this.path.length-2; i++) {
       line(this.path[i].x, this.path[i].y, this.path[i+1].x, this.path[i+1].y,)
     }
-    fill(200); noStroke()
+    fill(200,50); noStroke()
     ellipse(this.pos.x, this.pos.y, this.d, this.d)
   }
 
