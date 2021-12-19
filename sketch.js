@@ -3,13 +3,16 @@ var cy = 350;
 var cr = 50;
 var speed = 5;
 
+
 let meteor = [];
 ///////////////////
 let planets = []
-let sun
-let numPlanets = 4
-let G = 120
-let destabilise = 0.15
+let sun;
+let numPlanets = 4;
+let G = 120;
+let destabilise = 0.15;
+/////////////////
+let t = 50;
 
 function setup() {
   createCanvas(300, 700);
@@ -85,7 +88,7 @@ function Body(_mass, _pos, _vel){
     for (let i = 0; i < this.path.length-2; i++) {
       line(this.path[i].x, this.path[i].y, this.path[i+1].x, this.path[i+1].y,)
     }
-    fill(200,50); noStroke()
+    fill(200,t); noStroke()
     ellipse(this.pos.x, this.pos.y, this.d, this.d)
   }
 
