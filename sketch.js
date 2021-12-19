@@ -24,7 +24,7 @@ function setup() {
 
   createCanvas(300, 700);
   myUniverse.loop();
-  myUniverse.play();
+  // myUniverse.play();
   for(let i = 0; i < 10; i++) {
   meteor[i] = new Meteor(random(0, 300),random(0, 700));
 }
@@ -121,5 +121,8 @@ function Body(_mass, _pos, _vel){
     f.setMag( (G * this.mass * child.mass)/(r * r) )
     child.applyForce(f)
   }
+}
 
+function mousePressed() {
+  myUniverse.play();
 }
